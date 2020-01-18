@@ -1,17 +1,19 @@
 {
+  "author": "Jack Murphy <jackmurphy756@gmail.com>",
   "name": "movie-lisitings",
   "version": "1.0.0",
   "description": "Find out what movies are now showing with the TMDb API!",
   "main": "dist/bundle.js",
   "repository": "git@github.com:murpjack/movie-lisitings.git",
-  "author": "Jack Murphy <jackmurphy756@gmail.com>",
   "license": "MIT",
-  "private": false,
   "scripts": {
     "build": "webpack --config webpack.config.js"
   },
   "keywords": [
-    "Movies", "TMDb api", "Fluture", "React"
+    "Movies",
+    "TMDb api",
+    "Fluture",
+    "React"
   ],
   "babel": {
     "presets": [
@@ -31,13 +33,14 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
     "file-loader": "^4.2.0",
+    "fluture": "11.0.2",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.12.0",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
-    "fluture": "^12.1.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-input-slider": "^5.1.4",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "url-loader": "^2.1.0",

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Baskerville";
+  src: url("./../fonts/baskerville/baskerville-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("./../fonts/open_sans/open-sans-bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("./../fonts/open_sans/open-sans-regular.woff2") format("woff2");
+}
+
+/// Font Families ///
+$font-header: "Baskerville";
+$font-primary: "OpenSans-Regular";
+// $font-primary: #555;
+
+$color-primary: #052692;
+$color-secondary: #051241;
+$color-tertiary: #e5e5e5;

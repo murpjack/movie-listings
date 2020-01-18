@@ -42,7 +42,8 @@ const options = {
       template: path.join(__dirname, "src", "template.html"),
       filename: "movie-list.html", //relative to root of the application
       metaTitle: "Now Showing | Movies ",
-      pageHeaderTitle: "Now Showing",
+      pageHeaderTitle: "Movies",
+      pageHeaderSubtitle: "Now Showing",
       hash: true
     }),
     new CopyPlugin([
