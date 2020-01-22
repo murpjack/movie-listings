@@ -4,10 +4,12 @@
   "version": "1.0.0",
   "description": "Find out what movies are now showing with the TMDb API!",
   "main": "dist/bundle.js",
+  "proxy": "https://localhost:4000",
   "repository": "git@github.com:murpjack/movie-lisitings.git",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "devBuild": "webpack-dev-server --mode development"
   },
   "keywords": [
     "Movies",
@@ -39,6 +41,7 @@
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
+    "react-combine-reducers": "^1.0.2",
     "react-dom": "^16.9.0",
     "react-input-slider": "^5.1.4",
     "sass-loader": "^7.1.0",

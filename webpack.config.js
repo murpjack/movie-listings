@@ -5,12 +5,24 @@ const CopyPlugin = require("copy-webpack-plugin");
 
 const options = {
   mode: "development",
-
-  entry: path.join(__dirname, "src", "scripts", "app.jsx"),
+  entry: path.join(__dirname, "src", "scripts", "App.jsx"),
 
   output: {
     path: path.join(__dirname, "dist"),
     filename: "bundle.js"
+  },
+  devServer: {
+    port: 4000,
+    contentBase: path.join(__dirname, "dist"),
+    publicPath: "/",
+    https: true,
+    proxy: {
+      "/**": {
+        target: "https://[::1]:4000/okay",
+        secure: true,
+        changeOrigin: true
+      }
+    }
   },
 
   module: {
@@ -42,8 +54,6 @@ const options = {
       template: path.join(__dirname, "src", "template.html"),
       filename: "movie-list.html", //relative to root of the application
       metaTitle: "Now Showing | Movies ",
-      pageHeaderTitle: "Movies",
-      pageHeaderSubtitle: "Now Showing",
       hash: true
     }),
     new CopyPlugin([
